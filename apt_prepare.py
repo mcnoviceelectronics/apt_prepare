@@ -3,6 +3,8 @@
 # Created by MCNoviceElectronics
 # March 2018
 # Vist: https://mcnoviceelectronics.wordpress.com
+# See post for more details:
+# https://mcnoviceelectronics.wordpress.com/2018/03/22/raspberry-pi-creating-local-apt-repository/
 
 from apt_prepare_config import APT_Prepare_Config
 
@@ -62,7 +64,7 @@ def run_shell_cmd(shell_cmd, func_txt='run_shell_cmd'):
             logging.error('Shell cmd status: %d', p_status)
             logging.error('Error msg: %s', err)
     except:
-        logging.exception('Exception in %s', func_txt)
+        logging.exception('run_shell_cmd Exception running cmd %s', func_txt)
         raise SystemExit
 
     return p_status, output
