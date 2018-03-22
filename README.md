@@ -1,6 +1,8 @@
 # apt_prepare
 Creates the necessary apt repository files for a local apt repository
 
+See article on my website: [Raspberry Pi - Creating Local Apt Repository](https://mcnoviceelectronics.wordpress.com/2018/03/22/raspberry-pi-creating-local-apt-repository/)
+
 ## Usage
 ```bash
 ./apt_prepare.py
